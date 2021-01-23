@@ -11,6 +11,8 @@ You need to have Docker and Docker Compose installed on your machine to use this
 * InfluxDB;
 * Telegraf.
 
+**Remember to change the default passwords before running something based on this project in production ;) !!!**
+
 ## Presentations
 
 * [French presentation](presentation_fr.adoc).
