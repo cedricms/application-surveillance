@@ -8,7 +8,7 @@
 
 ## Principes
 
-image::./assets/img/collect_persist_view.svg[Collecte, persistance, et visualisation des données]
+image::./assets/img/svg/collect_persist_view.svg[Collecte, persistance, et visualisation des données]
 
 . Collecte de données;
 . Persistance des données;
@@ -16,7 +16,7 @@ image::./assets/img/collect_persist_view.svg[Collecte, persistance, et visualisa
 
 ## Collecte : Agents Telegraf
 
-image::./assets/img/telegraf.png[Telegraf]
+image::./assets/img/png/telegraf_logo.png[Telegraf]
 
 * Metriques systèmes;
 * Métriques de bases de données;
@@ -26,15 +26,16 @@ image::./assets/img/telegraf.png[Telegraf]
 
 ## Persistance : InfluxDB
 
-image::./assets/img/influxdb.png[InfluxDB]
+image::./assets/img/png/influxdb_logo.png[InfluxDB]
 
-* Système de gestion de base de données orientée séries temporelles hautes performances;
+* Système de gestion de base de données orientée séries temporelles hautes performances (> 100 000 points de données par secondes);
 * Mise à l'échelle horizontale;
-* Collecte de données en push ou pull.
+* Collecte de données en push ou pull;
+* Politique de rétention des données (aggrégation / suppression). Par défaut fixé à l'infini avec des échardes d'une semaine.
 
 ## Visualisation : Grafana
 
-image::./assets/img/grafana.png[Grafana]
+image::./assets/img/png/grafana_logo.png[Grafana]
 
 Hautement personnalisable :
 
@@ -45,14 +46,20 @@ Hautement personnalisable :
 ### Sources de données
 
 * Séries temporelles;
-* Base de données relationnelles (MySQL, Oracle, PostgreSQL, SQL Server, ...);
+* Base de données relationnelles :
+** MySQL;
+** Oracle;
+** PostgreSQL;
+** SQL Server;
+** ...
 * Elasticsearch;
 * PRTG;
+* Splunk;
 * ...
 
 ### Panneaux
 
-image::./assets/img/grafana_panel_visualization.png[Visualisation des panneaux]
+image::./assets/img/png/grafana_panel_visualization.png[Visualisation des panneaux]
 
 * Courbes;
 * Histogrammes;
@@ -66,6 +73,38 @@ image::./assets/img/grafana_panel_visualization.png[Visualisation des panneaux]
 
 ### Tableaux de bords
 
-image::./assets/img/grafana_dashboard.png[Tableaux de bords]
+image::./assets/img/png/grafana_dashboard.png[Tableaux de bords]
+
+https://grafana.com/grafana/dashboards[Catalog de tableaux de bords]
+
+### Alertes
+
+image::./assets/img/png/slack_notification.png[Notification Slack]
+
+* Emails;
+* Webhooks;
+* Messageries instantanées :
+** Teams;
+** Slack;
+** Telegram;
+** Discord;
+** ...
+* Kafka;
+* ...
+
+## Architectures
+
+### Simple
+
+image::./assets/img/svg/simple_architecture.svg[Architecture simple]
+
+*Avantage :* Mise en place et administration simple.
+
+### Orientée par type de source des données
+
+image::./assets/img/svg/data_source_type_architecture.svg[Architecture orientée par type de source des données]
+
+*Avantage :* Homogénéité des données collectées. Cloisonnement des types de métriques collectées par Telegraf (il peut arriver d'avoir des informations en doublon car plusieurs agents Telegraf pour différentes sources collectent les mêmes métriques (CPU et cpu%)).
 
 ## Demo time :)
+
