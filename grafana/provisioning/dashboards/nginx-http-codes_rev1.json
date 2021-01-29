@@ -15,8 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 6,
-  "iteration": 1611916645715,
+  "id": 1,
+  "iteration": 1611934714065,
   "links": [],
   "panels": [
     {
@@ -457,7 +457,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "nginx_access_log",
+          "measurement": "logparser",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -658,9 +658,9 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
-          "text": "404",
-          "value": "404"
+          "selected": false,
+          "text": "200",
+          "value": "200"
         },
         "datasource": "InfluxDB",
         "definition": "",
@@ -692,5 +692,5 @@
   "timezone": "",
   "title": "Nginx HTTP codes",
   "uid": "9kOq4ATGk",
-  "version": 3
+  "version": 1
 }
