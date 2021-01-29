@@ -25,3 +25,5 @@ hs_err_pid*
 /.idea
 /influxdb/system/influxdb-storage
 /grafana/grafana-storage
+/influxdb/log/influxdb-storage
+/influxdb/influxdb-storage

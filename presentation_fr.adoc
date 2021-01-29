@@ -104,7 +104,7 @@ image::./assets/img/svg/simple_architecture.svg[Architecture simple]
 
 image::./assets/img/svg/data_source_type_architecture.svg[Architecture orientée par type de source des données]
 
-*Avantage :* Homogénéité des données collectées. Cloisonnement des types de métriques collectées par Telegraf (il peut arriver d'avoir des informations en doublon car plusieurs agents Telegraf pour différentes sources collectent les mêmes métriques (CPU et cpu%)).
+*Avantage :* Homogénéité des données collectées. Cloisonnement des types de métriques collectées par Telegraf (il peut arriver d'avoir des informations en doublon car plusieurs agents Telegraf pour différentes sources collectent les mêmes métriques (CPU% et cpu)).
 
 ## Demo time :)
 

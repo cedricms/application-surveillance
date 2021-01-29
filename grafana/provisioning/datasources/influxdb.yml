@@ -3,14 +3,14 @@ apiVersion: 1
 
 # list of datasources that should be deleted from the database
 deleteDatasources:
-  - name: Influxdb_System
+  - name: InfluxDB
     orgId: 1
 
 # list of datasources to insert/update depending
 # whats available in the database
 datasources:
   # <string, required> name of the datasource. Required
-  - name: InfluxDB_System
+  - name: InfluxDB
     # <string, required> datasource type. Required
     type: influxdb
     # <string, required> access mode. direct or proxy. Required
@@ -18,13 +18,13 @@ datasources:
     # <int> org id. will default to orgId 1 if not specified
     orgId: 1
     # <string> url
-    url: http://influxdb_system:8086
+    url: http://influxdb:8086
     # <string> database password, if used
-    password: "influxdb_admin"
+    password: T31Egr@f
     # <string> database user, if used
-    user: "influxdb_admin_password"
+    user: telegraf
     # <string> database name, if used
-    database: "telegraf"
+    database: telegraf
     # <bool> enable/disable basic auth
     basicAuth: false
     #  withCredentials:
@@ -43,4 +43,4 @@ datasources:
     #    tlsClientKey: "..."
     version: 1
     # <bool> allow users to edit datasources from the UI.
-    editable: false
+    editable: true
