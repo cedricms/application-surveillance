@@ -1,5 +1,5 @@
 # application-surveillance
-A demo project to show how to setup a **Telegraf-InfluxDB-Grafana** application surveillance tool.
+A demo project to show how to setup a **Telegraf-InfluxDB-Grafana** application surveillance tool. The aim is both to monitor and help diagnose issues.
 
 ## Prerequisite
 
@@ -7,6 +7,7 @@ You need to have Docker and Docker Compose installed on your machine to use this
 
 ## Technical stack
 
+* Docker;
 * Grafana;
 * InfluxDB;
 * Telegraf.
@@ -15,7 +16,7 @@ You need to have Docker and Docker Compose installed on your machine to use this
 
 ## Presentations
 
-* [French presentation](presentation_fr.adoc).
+* [French presentation](presentation/presentation_fr.adoc).
 
 ## Helpful commands
 
