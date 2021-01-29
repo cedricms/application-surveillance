@@ -106,6 +106,11 @@ https://grafana.com/grafana/dashboards[Catalog de tableaux de bord]
 
 L'historique est assuré par Git.
 
+*Tableaux de bord utilisés :*
+
+* Telegraf System Overview : https://grafana.com/grafana/dashboards/914
+* Nginx : https://grafana.com/grafana/dashboards/5063
+
 ### Alertes
 
 image::../assets/img/png/slack_notification.png[Notification Slack]
