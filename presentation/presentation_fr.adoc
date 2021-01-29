@@ -144,6 +144,14 @@ image::../assets/img/svg/data_source_type_architecture.svg[Architecture orienté
 
 *Avantage :* Homogénéité des données collectées. Cloisonnement des types de métriques collectées par Telegraf (il peut arriver d'avoir des informations en doublon car plusieurs agents Telegraf pour différentes sources collectent les mêmes types de métriques (CPU% et cpu) (mais peuvent être décorrelées)).
 
+### Orchestrateur Docker
+
+Pour des cas plus complexes :
+
+* Kubernetes;
+* AKS;
+* ...
+
 ## Demo time :)
 
 ## Compléments :
