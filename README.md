@@ -10,7 +10,8 @@ You need to have Docker and Docker Compose installed on your machine to use this
 * Docker;
 * Grafana;
 * InfluxDB;
-* Telegraf.
+* Telegraf;
+* PostgreSQL.
 
 **Remember to change the default passwords before running something based on this project in production ;) !!!**
 
@@ -29,3 +30,7 @@ The default Grafana user is **admin/admin**.
 * Stop : ```docker-compose stop```
 * View the logs : ```docker-compose logs```
 * Remove the Docker containers : ```docker-compose rm```. Emptying the storage and log directories can be helpful.
+
+## Extra links
+
+* PgAdmin : http://localhost:5050 pgadmin4@pgadmin.org / admin

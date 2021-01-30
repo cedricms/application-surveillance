@@ -15,6 +15,36 @@ services:
     networks:
       - backend
 
+  postgres:
+    image: postgres
+    container_name: postgres
+    env_file:
+      - ./postgres/.env.postgres
+    volumes:
+      - ./postgres/postgres-storage:/var/lib/postgresql
+      - ./postgres/init-sql/1-schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./postgres/init-sql/2-data.sql:/docker-entrypoint-initdb.d/2-data.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    env_file:
+      - ./pgadmin/.env.pgadmin
+    volumes:
+      - ./pgadmin/pgadmin-storage:/root/.pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - backend
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
   telegraf:
     image: telegraf
     container_name: telegraf
@@ -22,6 +52,7 @@ services:
     network_mode: host
     depends_on:
       - influxdb
+      - postgres
     volumes:
       - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf
       - ./nginx/log:/var/log/nginx
