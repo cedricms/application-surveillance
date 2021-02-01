@@ -33,4 +33,4 @@ The default Grafana user is **admin/admin**.
 
 ## Extra links
 
-* PgAdmin : http://localhost:5050 pgadmin4@pgadmin.org / admin
+* PgAdmin : http://localhost:5050 pgadmin4@pgadmin.org / admin (the PostgreSQL server can be found at "postrges", not (127.0.0.1))
