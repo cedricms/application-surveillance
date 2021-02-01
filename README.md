@@ -21,6 +21,7 @@ You need to have Docker and Docker Compose installed on your machine to use this
 
 ## Helpful commands
 
+* To build the PostgreSQL ping demo application : ```mvnw spring-boot:build-image```
 * Start : ```docker-compose up -d```
 
 Access demo links via : http://localhost
