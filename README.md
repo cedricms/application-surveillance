@@ -21,7 +21,11 @@ You need to have Docker and Docker Compose installed on your machine to use this
 
 ## Helpful commands
 
-* To build the PostgreSQL ping demo application : ```mvnw spring-boot:build-image```
+* To build the PostgreSQL ping demo application : 
+
+```mvnw clean install```
+
+```docker build -t postgres-ping .```
 * Start : ```docker-compose up -d```
 
 Access demo links via : http://localhost
@@ -34,4 +38,4 @@ The default Grafana user is **admin/admin**.
 
 ## Extra links
 
-* PgAdmin : http://localhost:5050 pgadmin4@pgadmin.org / admin (the PostgreSQL server can be found at "postrges", not (127.0.0.1))
+* PgAdmin : http://localhost:5050 pgadmin4@pgadmin.org / admin (the PostgreSQL server can be found at "postgres", not (127.0.0.1))

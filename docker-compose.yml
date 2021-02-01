@@ -90,6 +90,14 @@ services:
       - 443:443
     depends_on:
       - grafana
+
+  postgres-ping:
+    image: postgres-ping
+    container_name: postgres-ping
+    networks:
+      - backend
+    depends_on:
+      - postgres
 networks:
   frontend:
   monitoring:
