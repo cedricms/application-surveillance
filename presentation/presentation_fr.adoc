@@ -15,7 +15,7 @@
 
 ## Autres solutions
 
-Au lieu du DIY : Grafana Cloud (https://grafana.com/products/cloud/). Coût raisonnable, mais les données sortent de l'entreprise (=> AWS).
+*Au lieu du DIY :* Grafana Cloud (https://grafana.com/products/cloud/). Coût raisonnable, mais les données sortent de l'entreprise (=> AWS). De plus, l'offre propose une solution basée sur Grafana-Prometheus; mais reste compatible avec Telegraf.
 
 *Concurence directe :*
 
@@ -50,6 +50,13 @@ image::../assets/img/png/telegraf_logo.png[Telegraf]
 * Logs;
 * ...
 * Etendable par plugins (en TypeScript).
+
+*Installation :*
+
+* Agent ou Service Windows;
+* Package Linux;
+* Image Docker;
+* ...
 
 ## Persistance : InfluxDB
 
@@ -165,6 +172,6 @@ Pour des cas plus complexes :
 *** GitLab;
 *** Bitbucket;
 *** ...
-* Sécurité : Cloisonnement par équipes. Il est recommandé par Grafana que (sauf cas exceptionnel de données sensibles) les tableaux de bord soient visibles à tous afin que les équipes puissent s'inspirer des créations des autres.
+* Sécurité : Cloisonnement par équipes (possible de gérer par groupes AD). Il est recommandé par Grafana que (sauf cas exceptionnel de données sensibles) les tableaux de bord soient visibles à tous afin que les équipes puissent s'inspirer des créations des autres.
 * Cycle de vie d'un tableau de bord : suite à un incident, si on se rend compte que le tableau de bord n'a pas permis de rapidement identifier la source de la panne, il faudra analyser les solution qui permettraient de compléter le tableau en cas de récurrence de cet incident.
 * Mettre en place une stratégie de nommage des tableaux de bord (par exemple : TEST ou TMP pour les versions en cours de conception).

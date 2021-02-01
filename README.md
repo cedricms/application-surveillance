@@ -23,7 +23,7 @@ You need to have Docker and Docker Compose installed on your machine to use this
 
 * Start : ```docker-compose up -d```
 
-Log on to : http://localhost
+Access demo links via : http://localhost
 
 The default Grafana user is **admin/admin**.
 
