@@ -3,10 +3,11 @@ A demo project to show how to setup a **Telegraf-InfluxDB-Grafana** application 
 
 ## Prerequisite
 
-You need to have Docker and Docker Compose installed on your machine to use this project. Otherwise, you need to manually install all the technical components.
+You need to have Docker and Docker Compose installed on your machine to use this project (Java might also be necessary if you want to run the PostgreSQL ping demo application). Otherwise, you need to manually install all the technical components.
 
 ## Technical stack
 
+* Java;
 * Docker;
 * Grafana;
 * InfluxDB;

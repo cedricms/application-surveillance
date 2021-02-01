@@ -15,7 +15,7 @@
 
 ## Autres solutions
 
-*Au lieu du DIY :* Grafana Cloud (https://grafana.com/products/cloud/). Coût raisonnable, mais les données sortent de l'entreprise (=> AWS). De plus, l'offre propose une solution basée sur Grafana-Prometheus; mais reste compatible avec Telegraf.
+*Au lieu du DIY :* Grafana Cloud (https://grafana.com/products/cloud/). Coût raisonnable, mais les données sortent de l'entreprise (=> AWS). De plus, l'offre propose une solution basée sur Grafana-Prometheus-Loki; mais reste compatible avec Telegraf.
 
 *Concurence directe :*
 
