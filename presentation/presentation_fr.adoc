@@ -162,6 +162,8 @@ Pour des cas plus complexes :
 
 ## Demo time :)
 
+image::../assets/img/svg/demo_architecture.svg[Architecture de l'application démo]
+
 ## Compléments :
 
 * Authentification (nécessite un serveur SMTP) :
