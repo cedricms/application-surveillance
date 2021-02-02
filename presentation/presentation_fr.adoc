@@ -106,6 +106,8 @@ image::../assets/img/png/grafana_panel_visualization.png[Visualisation des panne
 * ...
 * Etendable (en TypeScript).
 
+image::../assets/img/gif/panel_query.gif[Requête de panneau]
+
 ### Tableaux de bord
 
 image::../assets/img/png/grafana_dashboard.png[Tableaux de bord]
